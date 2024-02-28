@@ -4,14 +4,14 @@
   color: #fff;
   border: none;
   padding: 10px 0;
-  text-transform: uppercase;
+  text-transform: lowercase;
   border-radius: 5px;
 }
 
 .default {
-  @extend %btn; //extends button properties
+  @extend %btn;
   background-color: $color-aqua;
-  @include bg-lighten($color-aqua, 15%); //includes background lighten mixin
+  @include bg-lighten($color-aqua, 15%);
 }
 
 .error {

@@ -1,17 +1,18 @@
+/* all elements */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #777;
 }
-
+/* all ps */
 p {
   line-height: 1.45em;
 }
-
+/* all links */
 a {
   text-decoration: none;
 }
-
+/* quote in form section */
 .blockquote {
   margin-left: 20px;
   padding-left: 20px;
@@ -32,9 +33,6 @@ a {
   color: #51ddfc;
 }
 
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -374,10 +372,41 @@ template {
 [hidden] {
   display: none;
 }
+/* all elements */
 
 * {
   font-family: "Lato", sans-serif;
 }
+/* navigation */
+.nav {
+  padding-left: 0;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-link {
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: #99edd9;
+}
+
+
 
 .blockquote {
   font-size: 1.5em;
@@ -399,7 +428,7 @@ template {
   color: #fff;
   border: none;
   padding: 10px 0;
-  text-transform: uppercase;
+  text-transform: lowercase;
   border-radius: 5px;
 }
 
@@ -442,7 +471,7 @@ template {
 .warning:hover {
   background-color: #feb4a2;
 }
-
+/* form */
 .form {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -464,6 +493,32 @@ template {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+/* form image */
+
+.img-avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.img-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-frame {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  max-width: 100%;
+  padding: 13px;
+  border: 1px solid #ccc;
 }
 
 .container {
@@ -543,34 +598,8 @@ template {
       flex-basis: 100%;
 }
 
-.nav {
-  padding-left: 0;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
 
-.nav-link {
-  text-align: center;
-  border-radius: 5px;
-  padding: 10px 0;
-  display: block;
-  width: 100%;
-  -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in, color 0.2s ease-in-out;
-}
-
-.nav-link:hover {
-  color: #fff;
-  background-color: #99edd9;
-}
-
+/* tablet devices and heigher */
 @media (min-width: 768px) {
   .container {
     max-width: 1400px;
@@ -679,29 +708,3 @@ template {
     margin-right: initial;
   }
 }
-
-.img-avatar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.img-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.img-frame {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  max-width: 100%;
-  padding: 13px;
-  border: 1px solid #ccc;
-}
-/*# sourceMappingURL=styles.css.map */
